@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "SchoolNav"
+
+include ':unityLibrary'
+project(':unityLibrary').projectDir = new File('..\\ar\\unityLibrary')

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-180dp"
+        android:gravity="center|center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="浙江理工大学\n考场导航系统"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="请输入您的准考证号"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center|bottom"
+        android:layout_centerHorizontal="true"
+        android:textSize="27dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:alpha="0.5"
+        android:id="@+id/TextInputLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/textView1">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_input_info"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="202104250000">
+        </com.google.android.material.textfield.TextInputEditText>
+        <TextView
+            android:id="@+id/msg_show"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:textColor="#FF0000"
+            android:gravity="right"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/TextInputLayout1"
+        android:id="@+id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:text="确认"
+        android:textSize="27dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/subject_tl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp">
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="考试时间表"
+                android:textFontWeight="900"
+                android:textColor="#000000"
+                android:textSize="55px"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textStyle="bold"
+                android:text="科目"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:text="考试时间"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:text="结束时间"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text="考场"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="座位"/>
+        </TableRow>
+    </TableLayout>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16">
+    </com.baidu.mapapi.map.MapView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center">
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textColor="#033FF4"
+                android:id="@+id/msg_navi_normal"
+                android:text="下一门考试"
+                android:gravity="center"
+                android:layout_marginHorizontal="20dp">
+            </TextView>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="步行导航"
+                android:id="@+id/btn_walknavi_normal"
+                android:layout_marginHorizontal="20dp"/>
+
+<!--            <Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="实景导航"-->
+<!--                android:id="@+id/btn_walknavi_ar"-->
+<!--                android:layout_marginHorizontal="20dp"/>-->
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
